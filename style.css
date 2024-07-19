@@ -1,0 +1,233 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: black;
+}
+
+.contenedor{
+    font-family: "Poppins", sans-serif;
+    height: auto;
+    display: flex;
+    padding: 40px 0px 10px 0px;
+    flex-direction: column;
+    align-items: center;
+    gap: 15vh;
+    background-image: url(img/background.png);
+    background-position:center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.contact-mobile{
+    display: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+nav{
+    width: 90% !important;
+    padding: 0px !important;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btns{
+    justify-content: end;
+}
+
+.btn{
+    width: 100%;
+}
+
+.abt-btn a,.cntc-btn a{
+    color: white;
+}
+.abt-btn:hover a,.contact-btn{
+    color: black;
+}
+
+
+
+
+.cnt-btn{
+    background-color: white;
+    color: black;
+}
+
+#perfil{
+    margin-top: 10vh;
+    width: 90%;
+    color: white;
+}
+
+.perfil-cont{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.foto{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.foto .contorno{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 0;
+    background-color: #1A1A1A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contorno .img{
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    background-image: url(img/foto.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+
+.name{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.name h1{
+    font-weight: bold;
+    font-size: 60px;
+}
+
+.name p{
+    font-size: 16px;
+}
+
+#about-me{
+    width: 90%;
+}
+
+.about-cont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4vh;
+    color: white;
+}
+
+.about-cont h3{
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 45px !important;
+}
+
+.about-cont p{
+    font-size: 18px;
+}
+
+#proyectos{
+    display: none;
+    width: 90%;
+}
+
+.proyectos-cont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4vh;
+    color: white;
+}
+
+.proyectos-cont h3{
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 45px !important;
+}
+
+.proyectos-boxes{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 20px;
+}
+
+.proyect img{
+    cursor: pointer;
+}
+
+#redes{
+    width: 90%;
+    color:white;
+}
+
+.redes-cont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4vh;
+    color: white;
+}
+
+.redes-cont h3{
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 45px !important;
+}
+
+.iconos{
+    font-size: 35px;
+    cursor: pointer;
+    border: 2px solid #1A1A1A;
+    border-radius: 50%;
+    padding: 1.5vh;
+    transition: all 0.3s;
+
+}
+
+.iconos:hover{
+    transition: all 0.3s;
+    background-color: #272626;
+}
+
+@media (max-width:770px) {
+
+    .contact-mobile{
+        display: block;
+    }
+
+    .btns{
+        display: none !important;  
+    }
+
+
+    .name h1{
+        font-size: 50px;
+    }
+
+    .redes-boxes div{
+        width: 31vw !important;
+    }
+
+    .about-cont .text-cont{
+        width: 95vw !important; 
+    }
+
+    .cntc-btn{
+        width: 60vw !important;
+    }
+}
